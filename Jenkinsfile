@@ -100,7 +100,7 @@ pipeline {
     
             steps {
                 timeout(time: 1, unit: 'MINUTES') {
-                input message: '', ok: 'Yes, Im sure I want to deploy'
+                input message: 'Do you wish to deploy to production?', ok: 'Yes, I\'m sure!'
                 }
             }
     }
