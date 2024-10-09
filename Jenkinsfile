@@ -3,9 +3,15 @@ pipeline {
     environment {
         NETLIFY_SITE_ID = 'be204aa5-5657-4e03-a306-4833f4227751'
         NETLIFY_AUTH_TOKEN = credentials('netlify-token')
+        REACT_APP_VERSION ="1.0.$BUILD_ID"
     }
     stages {
         
+        stage('Docker'){
+            steps{
+                docker build -t my-playwright .
+            }
+        }
         stage('Build') {
                 agent {
                     docker {
@@ -114,7 +120,7 @@ pipeline {
                  }
              steps {
                 sh '''
-                       npm install netlify-cli
+                       npm install netlify-cli node-jq
                        node_modules/.bin/netlify --version
                        echo "Deploying to production. Site ID: $NETLIFY_SITE_ID"
                        node_modules/.bin/netlify status
