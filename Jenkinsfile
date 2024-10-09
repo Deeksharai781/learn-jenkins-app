@@ -10,6 +10,7 @@ pipeline {
         stage('Docker'){
             steps{
                 sh 'docker build -t my-playwright .'
+                sh 'docker run -d -p 8080:8080 -p 50000:50000 jenkins-nodejs'
             }
         }
         stage('Build') {
