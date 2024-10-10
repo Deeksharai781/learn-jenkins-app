@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        NETLIFY_SITE_ID = 'YOUR NETLIFY SITE ID'
+        NETLIFY_SITE_ID = 'be204aa5-5657-4e03-a306-4833f4227751'
         NETLIFY_AUTH_TOKEN = credentials('netlify-token')
     }
 
@@ -157,7 +157,7 @@ pipeline {
             }
 
             environment {
-                CI_ENVIRONMENT_URL = 'YOUR NETLIFY URL'
+                CI_ENVIRONMENT_URL = 'https://shiny-beijinho-8f5136.netlify.app'
             }
 
             steps {
