@@ -7,11 +7,11 @@
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
     "jest-junit": "^16.0.0",
-    "netlify-cli": "^17.36.4",
+    "netlify-cli": "^2.13.1",
     "node-jq": "^6.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
+    "react-scripts": "^3.0.1",
     "web-vitals": "^4.2.3"
   },
   "scripts": {
