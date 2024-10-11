@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="1" errors="0" time="1.187">
-  <testsuite name="src/App.test.js" errors="0" failures="1" skipped="0" timestamp="2024-10-11T09:23:24" time="0.773" tests="1">
-    <testcase classname="-renders learn Jenkins link" name="-renders learn Jenkins link" time="0.002">
+<testsuites name="jest tests" tests="1" failures="1" errors="0" time="1.212">
+  <testsuite name="src/App.test.js" errors="0" failures="1" skipped="0" timestamp="2024-10-11T09:55:57" time="0.636" tests="1">
+    <testcase classname="-renders learn Jenkins link" name="-renders learn Jenkins link" time="0.001">
       <failure>ReferenceError: React is not defined
     at Object.&lt;anonymous&gt; (/workspaces/learn-jenkins-app/src/App.test.js:5:10)
     at Object.asyncJestTest (/workspaces/learn-jenkins-app/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
